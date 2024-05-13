@@ -1,0 +1,77 @@
+@font-face { /*Esto agrega la fuente de texto de kebab*/
+    font-family: 'fuenteKebab';
+    src: url('fuente.woff') format('woff');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+}
+
+.container {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    
+    background-color: rgb(128, 202, 101, 0.85);
+    color: #7f5454;
+    height: 180px;
+    width: 100%;
+    border-bottom: 2px solid;
+}
+
+.logo{
+    max-height: 300px;
+    max-width: 300px;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+
+.logo img {
+    max-width: 100px;
+    max-height: 100px;    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utiliza flexbox para alinear las opciones del menú */
+    margin-bottom: 0px;
+    
+}
+
+nav ul li {
+    margin-right: 20px;
+    margin-left: 0px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Briem Hand", cursive;
+    
+}
+
+nav ul li a:hover {
+    color: rgb(255, 215, 0, 0.85); /* Cambia el color al pasar el mouse por encima */
+    text-decoration: underline;
+}
+
+.content {
+    padding-top: 180px; /* Añade un relleno superior para compensar el menú fijo */
+}
+
+.imagenDeInicio{
+    height: 450px;
+    width: 100%;
+    
+    
+}
+.imagenDeInicio img{
+    width: 100%;
+    height: 450px   ;
+}
