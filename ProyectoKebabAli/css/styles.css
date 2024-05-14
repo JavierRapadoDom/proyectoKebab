@@ -1,6 +1,6 @@
 @font-face { /*Esto agrega la fuente de texto de kebab*/
     font-family: 'fuenteKebab';
-    src: url('fuente.woff') format('woff');
+    src: url('fonts/fuente.woff') format('woff');
 }
 
 body {
