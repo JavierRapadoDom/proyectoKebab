@@ -38,7 +38,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Utiliza flexbox para alinear las opciones del menÃƒÂº */
+    display: flex; /* Utiliza flexbox para alinear las opciones del menÃƒÆ’Ã‚Âº */
     margin-bottom: 0px;
     
 }
@@ -62,7 +62,7 @@ nav ul li a:hover {
 }
 
 .content {
-    padding-top: 90px; /* AÃƒÂ±ade un relleno superior para compensar el menÃƒÂº fijo */
+    padding-top: 90px; /* AÃƒÆ’Ã‚Â±ade un relleno superior para compensar el menÃƒÆ’Ã‚Âº fijo */
 }
 
 .imagenDeInicio{
@@ -89,3 +89,22 @@ nav ul li a:hover {
     font-size: 15px;
   }
 }
+
+.contenidoMid{
+    height: 300px;
+    width: 100%;
+    background-color: green;
+}
+
+.contenidoMid img{
+    width: 60px;
+    height: 60px;
+}
+
+.img1{
+    margin-left:50px;
+    align-items: center;
+    align-content: center;
+    
+}
+
