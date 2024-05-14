@@ -1,6 +1,6 @@
 @font-face { /*Esto agrega la fuente de texto de kebab*/
     font-family: 'fuenteKebab';
-    src: url('fonts/fuente.woff') format('woff');
+    src: url('fuente.woff') format('woff');
 }
 
 body {
@@ -15,9 +15,9 @@ body {
     position: fixed;
     align-items: center;
     
-    background-color: rgb(128, 202, 101, 0.85);
-    color: #7f5454;
-    height: 180px;
+    background-color: rgb(254 255 253 / 85%);
+    color: #B93E3E;
+    height: 90px;
     width: 100%;
     border-bottom: 2px solid;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 58.3px;
     max-height: 100px;    
 }
 
@@ -38,7 +38,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Utiliza flexbox para alinear las opciones del menú */
+    display: flex; /* Utiliza flexbox para alinear las opciones del menÃƒÂº */
     margin-bottom: 0px;
     
 }
@@ -49,7 +49,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #B93E3E;
     text-decoration: none;
     font-size: 18px;
     font-family: "Briem Hand", cursive;
@@ -57,21 +57,35 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(255, 215, 0, 0.85); /* Cambia el color al pasar el mouse por encima */
+    color: #FEC671; /* Cambia el color al pasar el mouse por encima */
     text-decoration: underline;
 }
 
 .content {
-    padding-top: 180px; /* Añade un relleno superior para compensar el menú fijo */
+    padding-top: 90px; /* AÃƒÂ±ade un relleno superior para compensar el menÃƒÂº fijo */
 }
 
 .imagenDeInicio{
     height: 450px;
     width: 100%;
+    overflow:hidden;
     
     
 }
 .imagenDeInicio img{
     width: 100%;
-    height: 450px   ;
+    height: 450px;
+    max-width:100%;
+    height:auto;
+}
+
+@media screen and (max-width: 540px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul li a{
+    display: block;
+    font-size: 15px;
+  }
 }
