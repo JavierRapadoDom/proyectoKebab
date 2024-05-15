@@ -90,21 +90,106 @@ nav ul li a:hover {
   }
 }
 
-.contenidoMid{
-    height: 300px;
-    width: 100%;
-    background-color: green;
+.caracteristicas {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Alinear elementos al principio (arriba) */
+    padding: 30px 0; /* Reduce el relleno superior e inferior */
+    background-color: #f5f5f5;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas en pantallas pequeñas */
 }
 
-.contenidoMid img{
-    width: 60px;
-    height: 60px;
-}
-
-.img1{
-    margin-left:50px;
+.caract {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del contenido a columna en pantallas pequeñas */
     align-items: center;
-    align-content: center;
-    
+    width: 45%; /* Ancho del bloque de características en pantallas pequeñas */
+    padding: 10px;
+    margin-bottom: 20px; /* Espacio entre cada bloque de características */
 }
 
+.caract img {
+    width: 100px; /* Tamaño de la imagen */
+    height: 100px;
+    margin-bottom: 10px; /* Espacio inferior entre la imagen y el texto */
+}
+
+.text {
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+}
+
+/* Estilos para los textos */
+.text h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.text p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .caracteristicas {
+        padding: 20px 0; /* Reducir el relleno superior e inferior en pantallas pequeñas */
+    }
+
+    .caract {
+        width: 90%; /* Ancho completo en pantallas pequeñas */
+    }
+}
+
+.opiniones {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.opiniones h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.valoracion {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.circulo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+.reseñas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reseña {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .reseñas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reseña {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
