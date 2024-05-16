@@ -1,7 +1,9 @@
 @font-face { /*Esto agrega la fuente de texto de kebab*/
-    font-family: 'fuenteKebab';
-    src: url('fuente.woff') format('woff');
+    font-family: "fuenteKebab";
+    src: url("../fonts/fuente.woff") format('woff');
 }
+
+
 
 body {
     font-family: Arial, sans-serif;
@@ -44,15 +46,15 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 40px;
     margin-left: 0px;
 }
 
 nav ul li a {
     color: #B93E3E;
     text-decoration: none;
-    font-size: 18px;
-    font-family: "Briem Hand", cursive;
+    font-size: 24px;
+    font-family: "fuenteKebab";
     
 }
 
@@ -66,7 +68,7 @@ nav ul li a:hover {
 }
 
 .imagenDeInicio{
-    height: 450px;
+    
     width: 100%;
     overflow:hidden;
     
@@ -199,3 +201,244 @@ nav ul li a:hover {
         margin-bottom: 20px;
     }
 }
+
+
+.numero{
+    width: 80px;
+    height: 80px;
+    float:left;
+    border-radius: 50%;
+    background-color: #8e2424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+.descripcion{
+    height: auto;
+    width:auto;
+    background-color:orange;
+    justify-content:center;
+    align-items:center;
+    display:blocl;
+    
+}
+
+.descripcion h3, p{
+    text-align:center;   
+}
+
+.descripcion h3{
+    font-family: @font-face { /*Esto agrega la fuente de texto de kebab*/
+    font-family: "fuenteKebab";
+    src: url("fonts/fuente.woff") format('woff');
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+}
+
+.container {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    
+    background-color: rgb(254 255 253 / 85%);
+    color: #B93E3E;
+    height: 90px;
+    width: 100%;
+    border-bottom: 2px solid;
+}
+
+.logo{
+    max-height: 300px;
+    max-width: 300px;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+
+.logo img {
+    max-width: 58.3px;
+    max-height: 100px;    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utiliza flexbox para alinear las opciones del menÃƒÆ’Ã‚Âº */
+    margin-bottom: 0px;
+    
+}
+
+nav ul li {
+    margin-right: 20px;
+    margin-left: 0px;
+}
+
+nav ul li a {
+    color: #B93E3E;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "fuenteKebab";
+    
+}
+
+nav ul li a:hover {
+    color: #FEC671; /* Cambia el color al pasar el mouse por encima */
+    text-decoration: underline;
+}
+
+.content {
+    padding-top: 90px; /* AÃƒÆ’Ã‚Â±ade un relleno superior para compensar el menÃƒÆ’Ã‚Âº fijo */
+}
+
+.imagenDeInicio{
+    
+    width: 100%;
+    overflow:hidden;
+    
+    
+}
+.imagenDeInicio img{
+    width: 100%;
+    height: 450px;
+    max-width:100%;
+    height:auto;
+}
+
+@media screen and (max-width: 540px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul li a{
+    display: block;
+    font-size: 15px;
+  }
+}
+
+.caracteristicas {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Alinear elementos al principio (arriba) */
+    padding: 30px 0; /* Reduce el relleno superior e inferior */
+    background-color: #ffffff;
+    border: 2px solid;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas en pantallas pequeñas */
+}
+
+.caract {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del contenido a columna en pantallas pequeñas */
+    align-items: center;
+    width: 45%; /* Ancho del bloque de características en pantallas pequeñas */
+    padding: 10px;
+    margin-bottom: 20px; /* Espacio entre cada bloque de características */
+}
+
+.caract img {
+    width: 100px; /* Tamaño de la imagen */
+    height: 100px;
+    margin-bottom: 10px; /* Espacio inferior entre la imagen y el texto */
+}
+
+.text {
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+}
+
+/* Estilos para los textos */
+.text h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.text p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .caracteristicas {
+        padding: 20px 0; /* Reducir el relleno superior e inferior en pantallas pequeñas */
+    }
+
+    .caract {
+        width: 90%; /* Ancho completo en pantallas pequeñas */
+    }
+}
+
+.opiniones {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.opiniones h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.valoracion {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+
+
+.circulo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+.reseñas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reseña {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    width: 30%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .reseñas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reseña {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
