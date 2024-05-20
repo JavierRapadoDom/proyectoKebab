@@ -69,7 +69,7 @@ background-color: blue;
     justify-content:center;
     align-items:center;
     display:block;
-    
+
 }
 
 .descripcion h3, p, numero{
@@ -105,4 +105,33 @@ background-color: blue;
     align-content:center;
     justify-content: center;
     display: flex;
+}
+
+.contenido-ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.oferta {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imagenOferta img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .contenido-ofertas {
+        flex-direction: column;
+        align-items: center;
+    }
 }
