@@ -4,6 +4,11 @@
 }
 
 
+/*-----------------------------------------------------------------------------------------------------------------------------------
+                                                                GENERAL MENU
+------------------------------------------------------------------------------------------------------------------------------------*/
+
+
 .menuCarta{
     width: 100%;
     max-width: 800px;
@@ -37,6 +42,12 @@
 background-color: blue;
 }
 
+
+/*-----------------------------------------------------------------------------------------------------------------------------------
+                                                            APARTADO MENUS
+------------------------------------------------------------------------------------------------------------------------------------*/
+
+
 .menu .contenido-menu{
     padding: 0px;
     margin: 0 20px;
@@ -51,7 +62,6 @@ background-color: blue;
 }
 
 
-
 .btn-menu:checked ~ .contenido-menu{
     max-height: 600px;
     padding: 15px 0px;
@@ -60,16 +70,6 @@ background-color: blue;
 
 .btn-menu{
     display: none;
-}
-
-.descripcion{
-    height: auto;
-    width:auto;
-    background-color:orange;
-    justify-content:center;
-    align-items:center;
-    display:block;
-
 }
 
 .descripcion h3, p, numero{
@@ -84,6 +84,7 @@ background-color: blue;
 .descripcion p{
     font-size: 20px;
 }
+
 .numero{
     width: 80px;
     height: 80px;
@@ -99,6 +100,16 @@ background-color: blue;
     border: 2px solid #000;
 }
 
+.descripcion{
+    height: auto;
+    width:auto;
+    background-color:orange;
+    justify-content:center;
+    align-items:center;
+    display:block;
+
+}
+
 .imagenDescripcion{
     height: auto;
     width: auto;
@@ -106,6 +117,12 @@ background-color: blue;
     justify-content: center;
     display: flex;
 }
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------
+                                                            APARTADO OFERTAS
+------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 .contenido-ofertas {
     display: flex;
