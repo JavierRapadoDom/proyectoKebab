@@ -59,6 +59,10 @@ background-color: blue;
 .contenido-menu img{
     width: 472.8px;
     height: 386.4px;
+    
+}
+.contenido-menu:hover{
+    border: 4px solid;
 }
 
 
@@ -156,4 +160,20 @@ background-color: blue;
         flex-direction: column;
         align-items: center;
     }
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------
+                                                            APARTADO KEBABS
+------------------------------------------------------------------------------------------------------------------------------------*/
+.contenido-kebab {
+    padding: 0;
+    margin: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-menu:checked ~ .contenido-kebab {
+    max-height: 600px;
+    padding: 15px 0;
 }
