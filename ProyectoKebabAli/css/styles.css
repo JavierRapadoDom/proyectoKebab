@@ -250,6 +250,12 @@ footer{
     border-bottom: 2px solid;
 }
 
+.container-footer{
+    display: flex;
+    height: 210px;
+    width: 100%;
+}
+
 .mapa{
     color: white;
     background-color: #B93E3E;
@@ -263,23 +269,43 @@ footer{
 
 .mapa iframe{
     width: 400px;
-    height: 200px;
+    height: 70%px;
 }
 
 .copy{
     width: 100%;
-    height: 80px;
+    height: 50px;
     background-color: black;
     color: white;
     text-align: center;
     align-items: center;
     padding: 15px;
+    display: block;
 }
 
 .copy p{
     justify-content: center;
 }
 
+.horario{
+    color: white;
+    background-color: yellow;
+    height: 100%;
+    width: 33%;
+    align-items: center;
+    padding: 15px;
+    display: block;
+}
+
+.form{
+    color: white;
+    background-color: pink;
+    height: 100%;
+    width: 33%;
+    align-items: center;
+    padding: 15px;
+    display: block;
+}
 
 
 
