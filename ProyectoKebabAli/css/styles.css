@@ -239,6 +239,50 @@ nav ul li a:hover {
 }
 
 
+/*-----------------------------------------------------------------------------------------------------------------------------------
+                                                            FOOTER
+------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+    background-color: aquamarine;
+    height: 290px;
+    width: 100%;
+    border-bottom: 2px solid;
+}
+
+.mapa{
+    color: white;
+    background-color: #B93E3E;
+    height: 100%;
+    width: 33%;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+.mapa iframe{
+    width: 400px;
+    height: 200px;
+}
+
+.copy{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.copy p{
+    justify-content: center;
+}
+
+
+
+
 
 
 
