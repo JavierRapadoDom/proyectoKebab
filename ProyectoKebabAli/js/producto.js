@@ -34,3 +34,4 @@ al boton de cerrar se oculten los detalles del carrito*/
 document.querySelector('.close-cart').addEventListener('click', function() {
     document.getElementById('cart-details').style.display = 'none';
 });
+

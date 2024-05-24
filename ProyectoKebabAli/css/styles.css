@@ -1,8 +1,11 @@
 
-
 @font-face { /*Esto agrega la fuente de texto de kebab*/
     font-family: "fuenteKebab";
     src: url("../fonts/fuente.woff") format('woff');
+}
+@font-face { /*Esto agrega la fuente de texto de kebab*/
+    font-family: 'sketsa';
+    src: url('../fonts/sketsa.otf ');
 }
 
 
@@ -15,8 +18,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    padding-top: 0;
-    
+    padding-top: 0;    
 }
 
 
@@ -33,14 +35,14 @@ body {
 
 .container {
     display: flex;
-    position: fixed;
+    position: fixed; /* Mantener el menú fijo en la parte superior */
     align-items: center;
-    
     background-color: rgb(254 255 253 / 85%);
     color: #B93E3E;
     height: 90px;
     width: 100%;
     border-bottom: 2px solid;
+    z-index: 1000; /* con esto aseguramos q el menú tenga un z-index alto */
 }
 
 .logo{
@@ -51,10 +53,14 @@ body {
 }
 
 .logo img {
-    max-width: 58.3px;
+    max-width: 68.3px;
     max-height: 100px;    
 }
 
+nav {
+    position: relative;
+    z-index: 1000; /* Incrementa el z-index del menú */
+}
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -72,8 +78,8 @@ nav ul li {
 nav ul li a {
     color: #B93E3E;
     text-decoration: none;
-    font-size: 24px;
-    font-family: "fuenteKebab";
+    font-size: 34px;
+    font-family: "sketsa";
     
 }
 
@@ -132,6 +138,10 @@ nav ul li a:hover {
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas en pantallas pequeñas */
 }
 
+
+.caracteristicas h3{
+    font-family: "Unica One", sans-serif;
+}
 .caract {
     display: flex;
     flex-direction: column; /* Cambia la dirección del contenido a columna en pantallas pequeñas */
@@ -158,7 +168,7 @@ nav ul li a:hover {
 }
 
 .text p {
-    font-size: 14px;
+    font-size: 19px;
     color: #666;
 }
 

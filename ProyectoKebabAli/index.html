@@ -6,6 +6,8 @@
     <title>Kebab Ali</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/slider.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap" rel="stylesheet">
@@ -13,8 +15,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="icon" type="image/png" href="IMG/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Jaini&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Jaini&family=Unica+One&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" type="image/png" href="IMG/logo3.png">
 </head>
 
 <body>
@@ -22,7 +32,7 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="img/logo2.png" alt="Logo">
+                    <img src="img/logo3.png" alt="Logo">
                 </a>
             </div>
             <nav>
@@ -34,300 +44,467 @@
                 </ul>
             </nav>
         </div>
+    </header>    
 
-        <div class="content">
-            <div class="imagenDeInicio">
-                <img src="img/banner.png">
+    <div class="content">
+        <div class="imagenDeInicio">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active"><img src="img/banner.png" alt="Slide 1"></div>
+                    <div class="slide"><img src="img/banner2.png" alt="Slide 2"></div>
+                    <div class="slide"><img src="img/banner3.png" alt="Slide 3"></div>
+                </div>
             </div>
-            <section class="caracteristicas">
-                <div class="caract">
-                    <img src="img/imagen1.png" alt="El mejor sabor" width="100" height="100">
-                    <div class="text">
-                        <h3>El mejor sabor</h3>
-                        <p>Carnes de gran calidad que garantizarán un sabor excepcional.</p>
+        </div>
+        <section class="caracteristicas">
+            <div class="caract">
+                <img src="img/imagen1.png" alt="El mejor sabor" width="100" height="100">
+                <div class="text">
+                    <h3>El mejor sabor</h3>
+                    <p>Carnes de gran calidad que garantizarán un sabor excepcional.</p>
+                </div>
+            </div>
+            <div class="caract">
+                <img src="img/imagen2.png" alt="La favorita de la gente" width="100" height="100">
+                <div class="text">
+                    <h3>Los favoritos de la gente</h3>
+                    <p>Nuestros kebabs son los favoritos de la gente.</p>
+                </div>
+            </div>
+            <div class="caract">
+                <img src="img/imagen3.png" alt="Ingredientes naturales" width="100" height="100">
+                <div class="text">
+                    <h3>Ingredientes naturales</h3>
+                    <p>Usamos ingredientes naturales y de máxima calidad.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <div class="menuCarta">
+            <h2 id="tituloCarta">Nuestra carta</h2>
+            <div class="menu">
+                <input type="checkbox" name="menu" id="btn-menu1" class="btn-menu">
+                <label for="btn-menu1" class="menu-label">MENÚS</label>
+                <div class="contenido-menu">
+                    <h3 class="numero">1</h3>
+                    <div class="descripcion">
+                        <a href="producto.html">
+                            <h3>Kebab normal</h3>
+                        </a>
+                        
+                        <p>Kebab grande o sólo carne + 1,00€</p>
+                        <p>Total: 7€</p>
+                    </div>
+                    <div class="imagenDescripcion">
+                        <img src="img/menu1.png">
                     </div>
                 </div>
-                <div class="caract">
-                    <img src="img/imagen2.png" alt="La favorita de la gente" width="100" height="100">
-                    <div class="text">
-                        <h3>Los favoritos de la gente</h3>
-                        <p>Nuestros kebabs son los favoritos de la gente.</p>
+
+                <div class="contenido-menu">
+                    <h3 class="numero">2</h3>
+                    <div class="descripcion">
+                        <h3>Durum normal</h3>
+                        <p>Durum grande o sólo carne + 1,00€</p>
+                        <p>Total: 8€</p>
+                    </div>
+                    <div class="imagenDescripcion">
+                        <img src="img/menu2.png">
                     </div>
                 </div>
-                <div class="caract">
-                    <img src="img/imagen3.png" alt="Ingredientes naturales" width="100" height="100">
-                    <div class="text">
-                        <h3>Ingredientes naturales</h3>
-                        <p>Usamos ingredientes naturales y de máxima calidad.</p>
+
+                <div class="contenido-menu">
+                    <h3 class="numero">3</h3>
+                    <div class="descripcion">
+                        <h3>Plato normal</h3>
+                        <p>Plato sólo carne + 1,00€</p>
+                        <p>Total: 8€</p>
+                    </div>
+                    <div class="imagenDescripcion">
+                        <img src="img/menu3.png">
                     </div>
                 </div>
-            </section>
-            <hr>
 
-            <div class="menuCarta">
-                <h2>Carta del menu</h2>
-                <div class="menu">
-                    <input type="checkbox" name="menu" id="btn-menu1" class="btn-menu">
-                    <label for="btn-menu1" class="menu-label">MENÚS</label>
-                    <div class="contenido-menu">
-                        <h3 class="numero">1</h3>
-                        <div class="descripcion">
-                            <a href="producto.html">
-                                <h3>Kebab normal</h3>
-                            </a>
-                            
-                            <p>Kebab grande o sólo carne + 1,00€</p>
-                            <p>Total: 7€</p>
-                        </div>
-                        <div class="imagenDescripcion">
-                            <img src="img/menu1.png">
-                        </div>
+                <div class="contenido-menu">
+                    <h3 class="numero">4</h3>
+                    <div class="descripcion">
+                        <h3>Dürüm XL</h3>
+                        <p>Dürüm sólo carne + 1,00€</p>
+                        <p>Total: 8.50€</p>
                     </div>
-
-                    <div class="contenido-menu">
-                        <h3 class="numero">2</h3>
-                        <div class="descripcion">
-                            <h3>Durum normal</h3>
-                            <p>Durum grande o sólo carne + 1,00€</p>
-                            <p>Total: 8€</p>
-                        </div>
-                        <div class="imagenDescripcion">
-                            <img src="img/menu2.png">
-                        </div>
+                    <div class="imagenDescripcion">
+                        <img src="img/menu4.png">
                     </div>
-
-                    <div class="contenido-menu">
-                        <h3 class="numero">3</h3>
-                        <div class="descripcion">
-                            <h3>Plato normal</h3>
-                            <p>Plato sólo carne + 1,00€</p>
-                            <p>Total: 8€</p>
-                        </div>
-                        <div class="imagenDescripcion">
-                            <img src="img/menu3.png">
-                        </div>
-                    </div>
-
-                    <div class="contenido-menu">
-                        <h3 class="numero">4</h3>
-                        <div class="descripcion">
-                            <h3>Dürüm XL</h3>
-                            <p>Dürüm sólo carne + 1,00€</p>
-                            <p>Total: 8.50€</p>
-                        </div>
-                        <div class="imagenDescripcion">
-                            <img src="img/menu4.png">
-                        </div>
-                    </div>
-
-                    <div class="contenido-menu">
-                        <h3 class="numero">5</h3>
-                        <div class="descripcion">
-                            <h3>Lahmacun</h3>
-                            <p>Lahmacun sólo carne + 1,00€</p>
-                            <p>Total: 8.50€</p>
-                        </div>
-                        <div class="imagenDescripcion">
-                            <img src="img/menu5.png">
-                        </div>
-                    </div>
-
-
-
                 </div>
 
-                <div class="menu">
-                    <input type="checkbox" name="menu" id="btn-menu2" class="btn-menu">
-                    <label for="btn-menu2" class="menu-label">OFERTAS</label>
-                    <div class="contenido-menu">                    
-                        <div class="oferta">
-                            <div class="descripcion-oferta">
-                                <h3>MEDIODÍA</h3>
-                                <p>(Pedidos superiores a 17€)</p>
-                                <p>+ 1 Coca-cola 1,5L ó 1 Patatas</p>
-                            </div>
-                            <div class="imagenOferta">
-                                <img src="img/oferta1.png">
-                            </div>
-                        </div>
+                <div class="contenido-menu">
+                    <h3 class="numero">5</h3>
+                    <div class="descripcion">
+                        <h3>Lahmacun</h3>
+                        <p>Lahmacun sólo carne + 1,00€</p>
+                        <p>Total: 8.50€</p>
                     </div>
-                    <div class="contenido-menu">
-
-                    
-
-                        <div class="oferta">
-                            <div class="descripcion-oferta">
-                                <h3>LUNES A JUEVES</h3>
-                                <p>(Pedidos superiores a 22€)</p>
-                                <p>+ 1 Coca-cola 1,5L ó 1 Patatas</p>
-                            </div>
-                            <div class="imagenOferta">
-                                <img src="img/oferta2.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contenido-menu">
-                        <div class="oferta">
-                            <div class="descripcion-oferta">
-                                <h3>TODOS LOS DÍAS</h3>
-                                <p>(Pedidos superiores a 27€)</p>
-                                <p>+ 1 Coca-cola 1,5L ó 1 Patatas</p>
-                            </div>
-                            <div class="imagenOferta">
-                                <img src="img/oferta3.png">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="menu">
-                    <input type="checkbox" name="menu" id="btn-menu3" class="btn-menu">
-                    <label for="btn-menu3" class="menu-label">KEBABS</label>
-
-                    <div class="contenido-kebab">
-                        <div class="descripcion-kebab">
-                            <h3>1. Kebab Vegetal</h3>
-                            <p>Lechuga, tomate, cebolla, queso, pan y salsa</p>
-                        </div>
-                        <div class="precio">
-                            <p>4,00€</p>
-                        </div>
-                    </div>
-
-                    <div class="contenido-kebab">
-                        <div class="descripcion-kebab">
-                            <h3>2. Kebab Normal</h3>
-                            <p>Carne de ternera ó pollo, lechuga, tomate, cebolla, pan y salsa</p>
-                        </div>
-                        <div class="precio">
-                            <p>4,50€</p>
-                        </div>
-                    </div>
-
-                    <div class="contenido-kebab">
-                        <div class="descripcion-kebab">
-                            <h3>3. Kebab Mixto</h3>
-                            <p>Carne de ternera y pollo, lechuga, tomate, cebolla, pan y salsa</p>
-                        </div>
-                        <div class="precio">
-                            <p>4,50€</p>
-                        </div>
-                    </div>
-
-                    <div class="contenido-kebab">
-                        <div class="descripcion-kebab">
-                            <h3>4. Kebab Normal</h3>
-                            <p>Carne de ternera, pollo o mixto, lechuga, tomate, cebolla, pan y salsa</p>
-                        </div>
-                        <div class="precio">
-                            <p>5,00€</p>
-                        </div>
-                    </div>
-
-                    <div class="contenido-kebab">
-                        <div class="descripcion-kebab">
-                            <h3>5. Kebab Falafel</h3>
-                            <p>Falafel, lechuga, tomate, cebolla, pan y salsa</p>
-                        </div>
-                        <div class="precio">
-                            <p>4,50€</p>
-                        </div>
-                    </div>
-
-                    <div class="contenido-kebab">
-                        <div class="descripcion-kebab">
-                            <h3>6. Kebab Queso</h3>
-                            <p>Carne de ternera, pollo o mixto, queso, lechuga, tomate, cebolla, pan y salsa</p>
-                        </div>
-                        <div class="precio">
-                            <p>5,00€</p>
-                        </div>
-                    </div>
-
-                    <div class="contenido-kebab">
-                        <div class="descripcion-kebab">
-                            <h3>7. Kebab sólo carne</h3>
-                            <p>Carne de ternera, pollo o mixto, pan y salsa</p>
-                        </div>
-
-                        <div class="precio">
-                            <p>5,50€</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="menu">
-                    <input type="checkbox" name="menu" id="btn-menu4" class="btn-menu">
-                    <label for="btn-menu4" class="menu-label">DÜRUMS</label>
-                    <div class="contenido-menu">
-                        <p>dadsd</p>
+                    <div class="imagenDescripcion">
+                        <img src="img/menu5.png">
                     </div>
                 </div>
 
 
-                <div class="menu">
-                    <input type="checkbox" name="menu" id="btn-menu5" class="btn-menu">
-                    <label for="btn-menu6" class="menu-label">RACIONES</label>
-                    <div class="contenido-menu">
-                        <p>dadsd</p>
+
+            </div>
+
+            <div class="menu">
+                <input type="checkbox" name="menu" id="btn-menu2" class="btn-menu">
+                <label for="btn-menu2" class="menu-label">OFERTAS</label>
+                <div class="contenido-menu">                    
+                    <div class="oferta">
+                        <div class="descripcion-oferta">
+                            <h3>MEDIODÍA</h3>
+                            <p>(Pedidos superiores a 17€)</p>
+                            <p>+ 1 Coca-cola 1,5L ó 1 Patatas</p>
+                        </div>
+                        <div class="imagenOferta">
+                            <img src="img/oferta1.png">
+                        </div>
                     </div>
                 </div>
+                <div class="contenido-menu">
 
                 
 
-                
+                    <div class="oferta">
+                        <div class="descripcion-oferta">
+                            <h3>LUNES A JUEVES</h3>
+                            <p>(Pedidos superiores a 22€)</p>
+                            <p>+ 1 Coca-cola 1,5L ó 1 Patatas</p>
+                        </div>
+                        <div class="imagenOferta">
+                            <img src="img/oferta2.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenido-menu">
+                    <div class="oferta">
+                        <div class="descripcion-oferta">
+                            <h3>TODOS LOS DÍAS</h3>
+                            <p>(Pedidos superiores a 27€)</p>
+                            <p>+ 1 Coca-cola 1,5L ó 1 Patatas</p>
+                        </div>
+                        <div class="imagenOferta">
+                            <img src="img/oferta3.png">
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <section class="opiniones">
-                <h2>Opiniones de nuestros clientes</h2>
-                <div class="valoracion">
-                    <div class="circulo">
-                        <p>4.7</p>
+            <div class="menu">
+                <input type="checkbox" name="menu" id="btn-menu3" class="btn-menu">
+                <label for="btn-menu3" class="menu-label">KEBABS</label>
+
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>1. Kebab Vegetal</h3>
+                        <p>Lechuga, tomate, cebolla, queso, pan y salsa</p>
                     </div>
-                    <p>Media de reseñas</p>
-                </div>
-                <div class="reseñas">
-                    <div class="reseña">
-                        <p>"Falú es un gran chef, sus kebabs están riquísimos."</p>
-                        <img src="img/5estrellas.png">
-                    </div>
-                    <div class="reseña">
-                        <p>"El mejor Kebab del mundo!!!"</p>
-                        <img src="img/5estrellas.png">
-                    </div>
-                    <div class="reseña">
-                        <p>"Le echa la cantidad perfecta de salsa, y es muy agradable"</p>
-                        <img src="img/4estrellasmedia.png">
+                    <div class="precio">
+                        <p>4,00€</p>
                     </div>
                 </div>
-            </section>
-            <hr>
-            <footer class="footer">
-                <div class="container-footer">
-                    <div class="mapa">
-                        <p>DONDE ENCONTRARNOS</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d761.747331315152!2d-5.090775771482595!3d40.20930039820964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3f8befea38f125%3A0x7fa330d835b5e5b5!2sKEBAB%20ALI!5e0!3m2!1ses!2ses!4v1716312700793!5m2!1ses!2ses">
-                        </iframe>
-                        <p>C. Alfonso Rodríguez, 05400 Arenas de San Pedro, Ávila</p>
+
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>2. Kebab Normal</h3>
+                        <p>Carne de ternera ó pollo, lechuga, tomate, cebolla, pan y salsa</p>
                     </div>
-                    <div class="horario">
-                        <img src="img/HORARIO.png">
+                    <div class="precio">
+                        <p>4,50€</p>
                     </div>
-                    <div class="form">
+                </div>
+
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>3. Kebab Mixto</h3>
+                        <p>Carne de ternera y pollo, lechuga, tomate, cebolla, pan y salsa</p>
+                    </div>
+                    <div class="precio">
+                        <p>4,50€</p>
+                    </div>
+                </div>
+
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>4. Kebab Normal</h3>
+                        <p>Carne de ternera, pollo o mixto, lechuga, tomate, cebolla, pan y salsa</p>
+                    </div>
+                    <div class="precio">
+                        <p>5,00€</p>
+                    </div>
+                </div>
+
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>5. Kebab Falafel</h3>
+                        <p>Falafel, lechuga, tomate, cebolla, pan y salsa</p>
+                    </div>
+                    <div class="precio">
+                        <p>4,50€</p>
+                    </div>
+                </div>
+
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>6. Kebab Queso</h3>
+                        <p>Carne de ternera, pollo o mixto, queso, lechuga, tomate, cebolla, pan y salsa</p>
+                    </div>
+                    <div class="precio">
+                        <p>5,00€</p>
+                    </div>
+                </div>
+
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>7. Kebab sólo carne</h3>
+                        <p>Carne de ternera, pollo o mixto, pan y salsa</p>
+                    </div>
+
+                    <div class="precio">
+                        <p>5,50€</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu">
+                <input type="checkbox" name="menu" id="btn-menu4" class="btn-menu">
+                <label for="btn-menu4" class="menu-label">DÜRUMS</label>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>8. Dürum Vegetal</h3>
+                        <p>Lechuga, tomate, cebolla, queso y salsa</p>                                                        
+                    </div>
+                    <div class="precio">
+                        <p>4,50€</p>
+                    </div>
+                </div>
+
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>9. Dürum Normal</h3>
+                        <p>Carne de ternera ó pollo, lechuga, tomate, cebolla y salsa</p>                            
+                    </div>
+                    <div class="precio">
+                        <p>5,50€</p>
+                    </div>
+                </div>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>10. Dürum Mixto</h3>
+                        <p>Carne de ternera y pollo, lechuga, tomate, cebolla y salsa</p>                                                        
+                    </div>
+                    <div class="precio">
+                        <p>5,50€</p>
+                    </div>
+                </div>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>11. Dürum Grande</h3>
+                        <p>Carne de ternera, pollo o mixto, lechuga, tomate, cebolla y salsa</p>                                                        
+                    </div>
+                    <div class="precio">
+                        <p>6,00€</p>
+                    </div>
+                </div>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>12. Dürum Falafel</h3>
+                        <p>Falafel, lechuga, tomate, cebolla y salsa</p>                                                        
+                    </div>
+                    <div class="precio">
+                        <p>5,50€</p>
+                    </div>
+                </div>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>13. Dürum Queso</h3>
+                        <p>Carne de tenera, pollo o mixto, queso, lechuga, tomate, cebolla y salsa</p>                            
                         
                     </div>
-                    
+                    <div class="precio">
+                        <p>6,00€</p>
+                    </div>
                 </div>
-                <div class="copy">
-                    <p><span>&copy;</span>  Trinitarias ~ Diseñado y desarrollado por Javier Rapado e Izan Robles 1º DAM ~  </p>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>14. Dürum sólo carne</h3>
+                        <p>Carne de ternera, pollo o mixto, pan y salsa</p>                            
+                        
+                    </div>
+                    <div class="precio">
+                        <p>6,50€</p>
+                    </div>
                 </div>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>15. Lahmacun</h3>
+                        <p>Carne de ternera, cebolla, lechuga, tomate y salsa</p>                            
+                        
+                    </div>
+                    <div class="precio">
+                        <p>6,00€</p>
+                    </div>
+                </div>
+                
 
-            </footer>
+
+            </div>
+
+
+            <div class="menu">
+                <input type="checkbox" name="menu" id="btn-menu5" class="btn-menu">
+                <label for="btn-menu5" class="menu-label">RACIONES</label>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>16. Ensalada Turca</h3>
+                        <p>Tomate, lechuga, queso, aceitunas y zanahoria</p>                            
+                    </div>
+                    <div class="precio">
+                        <p>3,00€</p>
+                    </div>
+                </div>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>17. Arroz con Salsa</h3>
+                        <p></p>
+                    </div>
+                    <div class="precio">
+                        <p>2,50€</p>
+                    </div>
+                </div>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>18. Patatas Fritas con Salsa</h3>
+                        <p></p>                            
+                    </div>
+                    <div class="precio">
+                        <p>2,50€</p>
+                    </div>
+                </div>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>19. Patatas con Carne</h3>
+                        <p>Patatas fritas con carne de tenera ó pollo y salsa</p>                            
+                    </div>
+                    <div class="precio">
+                        <p>4,00€</p>
+                    </div>
+                </div>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>20. Aros de Cebolla (7 uds.)</h3>
+                        <p></p>                            
+                    </div>
+                    <div class="precio">
+                        <p>2,50€</p>
+                    </div>
+                </div>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>21. Falafel con Salsa (4uds.)</h3>
+                        <p></p>                            
+                    </div>
+                    <div class="precio">
+                        <p>2,50€</p>
+                    </div>
+                </div>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>22. Alistas de Pollo (4 uds.)</h3>
+                        <p></p>                            
+                    </div>
+                    <div class="precio">
+                        <p>3,00€</p>
+                    </div>
+                </div>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>23. Nuggets Pollo (4 uds.)</h3>
+                        <p></p>                            
+                    </div>
+                    <div class="precio">
+                        <p>2,50€</p>
+                    </div>
+                </div>
+                <div class="contenido-kebab">
+                    <div class="descripcion-kebab">
+                        <h3>24. Popcorn de Pollo</h3>
+                        <p></p>                            
+                    </div>
+                    <div class="precio">
+                        <p>4,00€</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+        <hr>
+        <section class="opiniones">
+            <h2>Opiniones de nuestros clientes</h2>
+            <div class="valoracion">
+                <div class="circulo">
+                    <p>4.7</p>
+                </div>
+                <p>Media de reseñas</p>
+            </div>
+            <div class="reseñas">
+                <div class="reseña">
+                    <p>"Falú es un gran chef, sus kebabs están riquísimos."</p>
+                    <img src="img/5estrellas.png">
+                </div>
+                <div class="reseña">
+                    <p>"El mejor Kebab del mundo!!!"</p>
+                    <img src="img/5estrellas.png">
+                </div>
+                <div class="reseña">
+                    <p>"Le echa la cantidad perfecta de salsa, y es muy agradable"</p>
+                    <img src="img/4estrellasmedia.png">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div class="redes-sociales">
+            <p>Nuestras redes sociales: </p>
+            
 
         </div>
-    </header>
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="mapa">
+                    <p>DONDE ENCONTRARNOS</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d761.747331315152!2d-5.090775771482595!3d40.20930039820964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3f8befea38f125%3A0x7fa330d835b5e5b5!2sKEBAB%20ALI!5e0!3m2!1ses!2ses!4v1716312700793!5m2!1ses!2ses">
+                    </iframe>
+                    <p>C. Alfonso Rodríguez, 05400 Arenas de San Pedro, Ávila</p>
+                </div>
+                <div class="horario">
+                    <img src="img/HORARIO.png">
+                </div>
+                <div class="form">
+                    
+                </div>
+                
+            </div>
+            <div class="copy">
+                <p><span>&copy;</span>  Trinitarias ~ Diseñado y desarrollado por Javier Rapado e Izan Robles 1º DAM ~  </p>
+            </div>
+
+        </footer>
+
+    </div>
+    <script src="js/producto.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
