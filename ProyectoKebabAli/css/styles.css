@@ -65,7 +65,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Utiliza flexbox para alinear las opciones del mensaje */
+    display: flex; /* Utiliza flexbox para alinear las opciones del menú */
     margin-bottom: 0px;
     
 }
@@ -89,18 +89,47 @@ nav ul li a:hover {
 }
 
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 640px) {
     nav {
       flex-direction: column;
     }
   
     nav ul li a{
       display: block;
-      font-size: 16px;
+      font-size: 20px;
     }
   }
 
-
+  @media screen and (max-width: 505px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    nav ul li a{
+      display: block;
+      font-size: 18px;
+    }
+    .logo{
+        margin-right: 12px;
+    }
+  }
+  @media screen and (max-width: 505px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    nav ul li a{
+      display: block;
+      font-size: 18px;
+    }
+    nav ul li{
+        margin-right: 20px;
+    }
+    .logo{
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+  }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------
                                                             BANNER
@@ -255,76 +284,81 @@ nav ul li a:hover {
 
 footer{
     background-color: aquamarine;
-    height: 310px;
     width: 100%;
 }
 
 .container-footer{
     display: flex;
-    height: 240px;
-    width: 100%;
-    position: relative;
+    justify-content: space-between; /*Esto lo q hace es alinear los elementos del contenedor de forma q haya un espacio igual entre ellos,
+    distribuye el espacio sobrante de manera uniforme entre los elementos*/
+    
+    flex-wrap: wrap; /*Basicamente q si no caben los elementos en una sola linea se ponen en forma de columna*/
+    padding: 20px;/*Establece un relleno de 20px en los cuatro lados del contenedor del footer*/
 }
 
 .mapa{
     color: white;
     background-color: #B93E3E;
-    height: 260px;
-    width: 33.33%;
-    align-items: center;
-    justify-content: center;
+    padding: 10px;
     text-align: center;
 }
 .mapa p{
-    text-align: center;
-    align-items: center;
     font-size: medium;
 }
 
 .mapa iframe{
-    width: 370px;
-    height: 170px;
+    width: 100%;
+    height: 200px;
+    border: none;
 }
 
 .copy{
     width: 100%;
-    height: 70px;
     background-color: black;
     color: white;
     text-align: center;
-    display: block;
-    align-content: center;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .copy p{
-    justify-content: center;
+    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
-    align-items: center;
-    text-align: center;
+    margin: 0;
+    
 }
 
 .horario{
     color: white;
     background-color: yellow;
-    height: 260px;
-    width: 33.33%;
-    align-items: center;
-    display: block;
+    text-align: center;
+    padding: 10px;
 }
 
 .horario img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .form{
     color: white;
     background-color: pink;
-    height: 260px;
-    width: 33.33%;
-    align-items: center;
-    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.mapa, .horario, .form{
+    flex: 1 1 300px;
+    /*El primer 1 significa flex-grow: 1, que permite q el elemento crezca para ocupar todo el espacio disponible en el contenedor flex*/
+    /*El segundo 1 significa flex-shrink: 1 que permite q el elemento se encoja si es necesario para evitar deformidades*/
+    /*Y lo ultimo significa flex-basis: 300px q establece un tamaño base de 300pixeles para el elemento, es decir para el horario, el mapa y el formulario*/
+
+    margin: 10px;
+    box-sizing: border-box;
+    /*El box-sizing:border-box indica q el ancho y el alto declarados del contenedor incluyan el padding 
+    y el borde, en lugar de ser adicionales a ellos*/
+
 }
 
 
