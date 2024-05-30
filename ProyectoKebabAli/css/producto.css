@@ -1,3 +1,17 @@
+@font-face { 
+    font-family: "Simplo-Regular";
+    src: url("../fonts/Simplo-Regular.otf");
+}
+@font-face { 
+    font-family: 'Simplo-Light';
+    src: url('../fonts/Simplo-Light.otf ');
+}
+
+@font-face { 
+    font-family: 'Simplo-Bold';
+    src: url('../fonts/Simplo-Bold.otf ');
+}
+
 .container-producto {
     border: solid #b93e3e;
     height: 520px;
@@ -11,7 +25,6 @@
 .imagen-producto{
     width: 50%;
     height: 100%;
-    background-color: chartreuse;
     justify-content: center;
     display: flex;
 }
@@ -19,22 +32,111 @@
     width: 440px;
     height: 390px;
     border-radius: 20px;
-    align-self: center
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+    border: #b93e3e solid 2px;   
 }
-
+.imagen-producto img:hover{
+    box-shadow: -3px -3px 15px 2px rgba(0,0,0,0.2);
+}
 .container-info-producto{
     background-color: bisque;
     height: 100%;
     width: 50%;   
-    display: flex;
+    
+    
+    align-items: center;
     justify-content: center;
+    font-family: "Unica One", sans-serif;
 }
 
 .container-info-producto h2{
-    position: absolute;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center;
+    font-family: Simplo-Bold;
+}
+
+.container-info-producto .precio-kebab p{
+    margin: 10px 0;
+    font-size: 24px;
+    text-align: left;
     
 }
 
-.container-info-producto p{
-    padding: 35px;
+.container-info-producto .valoraciones{
+    margin: 10px 0;
+    text-align: left;
 }
+
+.container-info-producto p{
+    text-align: center;
+    margin: 10px 0;
+    font-family: Simplo-Light;
+}
+
+.precio-kebab, .valoraciones img{
+    position: relative;
+    left: 30px;
+}
+
+.valoraciones{
+    display: inline-flex;
+    align-items: center;
+}
+.valoraciones p{
+    font-size: 12px;
+}
+.valoraciones img{
+    height: 80px;
+    width: 80px;
+    position:relative;
+    margin-right: 35px;
+}
+
+.valoraciones img:hover{
+    
+}
+
+.contenedor-ingredientes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.verduras{
+    padding-bottom: 5px;
+}
+
+.verduras input{
+    border-radius: 5px;
+}
+
+.container-boton{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn-anadirCarro {
+    background-color: white;
+    color: black;
+    font-family: Simplo-Regular;
+    border: 2px solid #b93e3e;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn-anadirCarro:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+  

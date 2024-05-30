@@ -12,7 +12,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jaini&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="IMG/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Jaini&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Jaini&family=Unica+One&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="IMG/logo3.png">
 </head>
 <body>
     <header>
@@ -30,6 +38,7 @@
                     <li><a href="#">Haz tu Pedido</a></li>
                 </ul>
             </nav>
+            <a href="#"><img id="carrito" src="img/carrito.png"></a>
         </div>
     </header> 
     <div class="container-producto">
@@ -38,13 +47,46 @@
         </div>
         <div class="container-info-producto">
             <h2>KEBAB NORMAL</h2>
+            <div class="precio-kebab">
+                <p>4.50€</p>
+            </div>
+            <div class="valoraciones">
+                <img src="img/estrellasnegras.png">
+                <p>8 valoraciones</p>
+            </div>
             <p>El kebab de toda la vida pero con los mejores ingredientes y nuestras salsas caseras.</p>
+            <div class="contenedor-ingredientes">
+                <div class="carne">
+                    Carne:
+                    <select name="carne">
+                        <option>Ternera</option>
+                        <option>Pollo</option>
+                        <option>Mixto</option>
+                        <option>Falafel</option>
+                    </select>
+                    
+                </div>
+
+                <div class="verduras">
+                    Lechuga<input type="checkbox" name="lechuga">
+                    <br>
+                    Tomate<input type="checkbox" name="lechuga">
+                    <br>
+                    Cebolla<input type="checkbox" name="lechuga">
+                    <br>
+                    Salsa<input type="checkbox" name="lechuga">
+                </div>                
+            </div>
+            <div class="container-boton">    
+                <button class="btn-anadirCarro">Añadir al carrito</button>
+            </div>    
+            
         </div>
     </div>
     <footer class="footer">
         <div class="container-footer">
             <div class="mapa">
-                <p>DONDE ENCONTRARNOS</p>
+                <h3>DONDE ENCONTRARNOS</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d761.747331315152!2d-5.090775771482595!3d40.20930039820964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3f8befea38f125%3A0x7fa330d835b5e5b5!2sKEBAB%20ALI!5e0!3m2!1ses!2ses!4v1716312700793!5m2!1ses!2ses">
                 </iframe>
                 <p>C. Alfonso Rodríguez, 05400 Arenas de San Pedro, Ávila</p>
@@ -53,13 +95,21 @@
                 <img src="img/HORARIO.png">
             </div>
             <div class="form">
-                
+                <form>
+                    <h3> ¿TIENES ALGUNA DUDA O SUGERENCIA?</h3>
+                    <h4>¡Contacta con nosotros! </h4>
+                    <p>Correo electronico: <input type="email" required></p>
+                    <p>Número de telefono: <input type="tel"></p>
+                    <p><textarea rows="7" cols="45" placeholder="Escriba su observación o duda" required></textarea></p>
+                    <input id="enviar" type="submit" value="Enviar">
+                </form>
             </div>
             
         </div>
         <div class="copy">
             <p><span>&copy;</span>  Trinitarias ~ Diseñado y desarrollado por Javier Rapado e Izan Robles 1º DAM ~  </p>
         </div>
+
     </footer>
 </body>
 

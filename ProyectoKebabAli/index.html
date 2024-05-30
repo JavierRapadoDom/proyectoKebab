@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Jaini&family=Unica+One&display=swap" rel="stylesheet">
 
 
-    <link rel="icon" type="image/png" href="IMG/logo3.png">
+    <link rel="icon" type="image/png" href="IMG/logo2.png">
 </head>
 
 <body>
@@ -43,18 +43,13 @@
                     <li><a href="#">Haz tu Pedido</a></li>
                 </ul>
             </nav>
+            <a href="#"><img id="carrito" src="img/carrito.png"></a>
         </div>
     </header>    
 
     <div class="content">
-        <div class="imagenDeInicio">
-            <div class="slider-container">
-                <div class="slider">
-                    <div class="slide active"><img src="img/banner.png" alt="Slide 1"></div>
-                    <div class="slide"><img src="img/banner2.png" alt="Slide 2"></div>
-                    <div class="slide"><img src="img/banner3.png" alt="Slide 3"></div>
-                </div>
-            </div>
+        <div class="videoDeInicio">
+            <video src="img/banner.mp4" autoplay loop></video>
         </div>
         <section class="caracteristicas">
             <div class="caract">
@@ -486,7 +481,7 @@
         <footer class="footer">
             <div class="container-footer">
                 <div class="mapa">
-                    <p>DONDE ENCONTRARNOS</p>
+                    <h3>DONDE ENCONTRARNOS</h3>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d761.747331315152!2d-5.090775771482595!3d40.20930039820964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3f8befea38f125%3A0x7fa330d835b5e5b5!2sKEBAB%20ALI!5e0!3m2!1ses!2ses!4v1716312700793!5m2!1ses!2ses">
                     </iframe>
                     <p>C. Alfonso Rodríguez, 05400 Arenas de San Pedro, Ávila</p>
@@ -495,7 +490,14 @@
                     <img src="img/HORARIO.png">
                 </div>
                 <div class="form">
-                    
+                    <form>
+                        <h3> ¿TIENES ALGUNA DUDA O SUGERENCIA?</h3>
+                        <h4>¡Contacta con nosotros! </h4>
+                        <p>Correo electronico: <input type="email" required></p>
+                        <p>Número de telefono: <input type="tel"></p>
+                        <p><textarea rows="7" cols="45" placeholder="Escriba su observación o duda" required></textarea></p>
+                        <input id="enviar" type="submit" value="Enviar">
+                    </form>
                 </div>
                 
             </div>

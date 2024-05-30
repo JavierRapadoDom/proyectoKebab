@@ -27,6 +27,9 @@ body {
     padding-top: 90px; /* Añade un relleno superior para compensar el menu fijo */
 }
 
+h3{
+    font-family:'Flamenco', system-ui ;
+}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------
                                                             NAV
@@ -89,6 +92,13 @@ nav ul li a:hover {
 }
 
 
+#carrito{
+    max-width: 52.3px;
+    max-height: 90px;  
+    position: relative;
+    left: 725px;
+}
+
 @media screen and (max-width: 640px) {
     nav {
       flex-direction: column;
@@ -137,18 +147,17 @@ nav ul li a:hover {
 
 
 
-.imagenDeInicio{
+.videoDeInicio{
     
     width: 100%;
-    overflow:hidden;
-    
+    height: 100%;
+    display: flex;
+    justify-content: center;
     
 }
-.imagenDeInicio img{
-    width: 100%;
-    height: 450px;
-    max-width:100%;
-    height:auto;
+.videoDeInicio video{
+    width: auto;
+    height: auto; 
 }
 
 
@@ -164,7 +173,7 @@ nav ul li a:hover {
     padding: 30px 0; /* Reduce el relleno superior e inferior */
     background-color: #ffffff;
     border: 2px solid;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas en pantallas pequeñas */
+    flex-wrap: wrap; /* Permite q los elementos se envuelvan en filas en pantallas pequeñas */
 }
 
 
@@ -324,6 +333,7 @@ footer{
     width: 100%;
     height: 200px;
     border: none;
+    border-radius:15px ;
 }
 
 .copy{
@@ -345,13 +355,19 @@ footer{
 
 .horario{
     color: white;
-    background-color: yellow;
+    background-color: #B93E3E;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .horario img{
-    width: 100%;
-    height: 100%;
+        width: 494px;
+        height: 260px;
+        border-radius: 15px;
+        left: 25px;
+        position: relative;
 }
 
 .form{
@@ -359,6 +375,19 @@ footer{
     background-color: #B93E3E;
     text-align: center;
     padding: 10px;
+}
+
+form input{
+    border-radius: 5px;
+}
+
+.form textarea{
+    border-radius: 5px;
+}
+
+#enviar{
+    position: relative;
+    bottom: 8px;
 }
 
 .mapa, .horario, .form{
