@@ -1,0 +1,40 @@
+.container-producto {
+    border: solid #b93e3e;
+    height: 520px;
+    width: 100%;
+    top: 130px;
+    position: absolute;
+    display: flex;
+
+}
+
+.imagen-producto{
+    width: 50%;
+    height: 100%;
+    background-color: chartreuse;
+    justify-content: center;
+    display: flex;
+}
+.imagen-producto img{
+    width: 440px;
+    height: 390px;
+    border-radius: 20px;
+    align-self: center
+}
+
+.container-info-producto{
+    background-color: bisque;
+    height: 100%;
+    width: 50%;   
+    display: flex;
+    justify-content: center;
+}
+
+.container-info-producto h2{
+    position: absolute;
+    
+}
+
+.container-info-producto p{
+    padding: 35px;
+}
