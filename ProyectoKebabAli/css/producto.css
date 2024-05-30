@@ -13,10 +13,9 @@
 }
 
 .container-producto {
-    border: solid #b93e3e;
     height: 520px;
     width: 100%;
-    top: 130px;
+    top: 152px;
     position: absolute;
     display: flex;
 
@@ -95,9 +94,6 @@
     margin-right: 35px;
 }
 
-.valoraciones img:hover{
-    
-}
 
 .contenedor-ingredientes{
     display: flex;

@@ -1,9 +1,9 @@
 
-@font-face { /*Esto agrega la fuente de texto de kebab*/
+@font-face { /*Esto agrega la fuente de texto q queremos*/
     font-family: "fuenteKebab";
     src: url("../fonts/fuente.woff") format('woff');
 }
-@font-face { /*Esto agrega la fuente de texto de kebab*/
+@font-face { 
     font-family: 'sketsa';
     src: url('../fonts/sketsa.otf ');
 }
@@ -24,7 +24,7 @@ body {
 
 
 .content {
-    padding-top: 90px; /* Añade un relleno superior para compensar el menu fijo */
+    padding-top: 90px; /* Añade un  relleno superior  */
 }
 
 h3{
@@ -38,14 +38,14 @@ h3{
 
 .container {
     display: flex;
-    position: fixed; /* Mantener el menú fijo en la parte superior */
+    position: fixed; /* Esto sirve para mantener el menu arriba*/
     align-items: center;
     background-color: rgb(254 255 253 / 85%);
     color: #B93E3E;
     height: 90px;
     width: 100%;
     border-bottom: 2px solid;
-    z-index: 1000; /* con esto aseguramos q el menú tenga un z-index alto */
+    z-index: 1000; 
 }
 
 .logo{
@@ -62,13 +62,13 @@ h3{
 
 nav {
     position: relative;
-    z-index: 1000; /* Incrementa el z-index del menú */
+    z-index: 1000; 
 }
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Utiliza flexbox para alinear las opciones del menú */
+    display: flex; 
     margin-bottom: 0px;
     
 }
@@ -87,7 +87,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FEC671; /* Cambia el color al pasar el cursor por encima */
+    color: #FEC671; 
     text-decoration: underline;
 }
 
