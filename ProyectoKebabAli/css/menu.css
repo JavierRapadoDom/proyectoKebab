@@ -65,18 +65,25 @@ background-color:#B93E3E;
     transition: all 300ms ease;
 }
 
+
 .contenido-menu img{
     width: 472.8px;
     height: 386.4px;
     
 }
+.contenido-menu h3{
+    margin-top: 0px;
+}
+.contenido-menu:hover{
+    border: 2px solid;
+}
 
 
 .btn-menu:checked ~ .contenido-menu{
     max-height: 600px;
-    padding: 15px 0px;
-
+    padding: 0px 0px;
 }
+
 
 .btn-menu{
     display: none;
