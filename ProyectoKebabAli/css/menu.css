@@ -207,10 +207,8 @@
 }
 
 .contenido-kebab:hover{
-    /*border: 2px solid #B93E3E;*/
     background-color: #B93E3E;
     color: white;
-    /*transition: background-color 1s ease-in-out, filter 1s ease-in-out;*/
 }
 
 .descripcion-kebab h3, p{
