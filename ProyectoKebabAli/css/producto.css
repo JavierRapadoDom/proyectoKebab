@@ -18,6 +18,7 @@
     top: 152px;
     position: absolute;
     display: flex;
+    
 
 }
 
@@ -28,8 +29,8 @@
     display: flex;
 }
 .imagen-producto img{
-    width: 440px;
-    height: 390px;
+    width: 484px;
+    height: 429px;
     border-radius: 20px;
     max-width: 100%;
     max-height: 100%;
@@ -40,14 +41,15 @@
     box-shadow: -3px -3px 15px 2px rgba(0,0,0,0.2);
 }
 .container-info-producto{
-    background-color: bisque;
     height: 100%;
     width: 50%;   
-    
-    
+    border: #b93e3e solid 2px;
+    border-radius: 20px;
     align-items: center;
     justify-content: center;
     font-family: "Unica One", sans-serif;
+    position: relative;
+    bottom: 42px;
 }
 
 .container-info-producto h2{
@@ -55,12 +57,12 @@
     margin-top: 0;
     text-align: center;
     font-family: Simplo-Bold;
+    font-size:45px ;
 }
 
-.container-info-producto .precio-kebab p{
-    margin: 10px 0;
+ .precio-kebab {
     font-size: 24px;
-    text-align: left;
+    position: relative;
     
 }
 
@@ -75,24 +77,28 @@
     font-family: Simplo-Light;
 }
 
-.precio-kebab, .valoraciones img{
+.valoraciones img{
     position: relative;
     left: 30px;
+    width:120px ;
+    opacity: 0.5;
+    height: 120px;
+    margin-right: 35px;
+}
+
+.valoraciones img:hover{
+    opacity: 1;
 }
 
 .valoraciones{
     display: inline-flex;
     align-items: center;
+    position: relative;
 }
 .valoraciones p{
     font-size: 12px;
 }
-.valoraciones img{
-    height: 80px;
-    width: 80px;
-    position:relative;
-    margin-right: 35px;
-}
+
 
 
 .contenedor-ingredientes{
@@ -100,7 +106,9 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
+    font-size: 22px;
+    position: relative;
+    bottom: 30px;
 }
 
 .verduras{
@@ -114,7 +122,10 @@
 .container-boton{
     display: flex;
     justify-content: center;
-    
+}
+
+.container-boton button:hover{
+    background-color: #b93e3e;
 }
 
 .btn-anadirCarro {
@@ -127,6 +138,8 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    bottom: 20px;
   }
   
   .btn-anadirCarro:hover {
@@ -135,4 +148,10 @@
   }
 
 
-  
+  footer{
+    background-color: aquamarine;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+}

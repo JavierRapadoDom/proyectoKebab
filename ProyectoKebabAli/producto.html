@@ -32,10 +32,12 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Carta</a></li>
-                    <li><a href="#">Reservas</a></li>
-                    <li><a href="#">Haz tu Pedido</a></li>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Carta</a></li>
+                        <li><a href="#">Haz tu pedido</a></li>
+                        <li><a href="#ref-footer-producto">Sobre nosotros</a></li>
+                    </ul>
                 </ul>
             </nav>
             <a href="#"><img id="carrito" src="img/carrito.png"></a>
@@ -47,14 +49,15 @@
         </div>
         <div class="container-info-producto">
             <h2>KEBAB NORMAL</h2>
-            <div class="precio-kebab">
-                <p>4.50€</p>
-            </div>
+            <p>El kebab de toda la vida pero con el mejor sabor y los mejores ingredientes.<br>
+                Prueba nuestras salsas caseras, no te arrepentirás.<br>
+                Pan elaborado artesanalmente, pregunta por nuestra opción sin gluten.
+            </p>
             <div class="valoraciones">
                 <img src="img/estrellasnegras.png">
-                <p>8 valoraciones</p>
+                <p>68 valoraciones</p>
             </div>
-            <p>El kebab de toda la vida pero con los mejores ingredientes y nuestras salsas caseras.</p>
+            
             <div class="contenedor-ingredientes">
                 <div class="carne">
                     Carne:
@@ -75,7 +78,10 @@
                     Cebolla<input type="checkbox" name="lechuga">
                     <br>
                     Salsa<input type="checkbox" name="lechuga">
-                </div>                
+                </div>   
+                <div class="precio-kebab">
+                    <p>4.50€ <i>(+1€ si pides solo carne)</i></p>
+                </div>             
             </div>
             <div class="container-boton">    
                 <button class="btn-anadirCarro">Añadir al carrito</button>
@@ -83,7 +89,8 @@
             
         </div>
     </div>
-    <footer class="footer">
+    
+    <footer class="footer" id="ref-footer-producto">
         <div class="container-footer">
             <div class="mapa">
                 <h3>DONDE ENCONTRARNOS</h3>
